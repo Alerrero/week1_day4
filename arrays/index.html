@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Declaration
+        const drinks = ['Coca-cola', 'Agua', 'RedBull', 'Kas', 'Nestea', 'Cacaolat']
+        const whatever = []
+
+
+        // Access
+        console.log('La primera bebida es', drinks[0])      // getter
+        drinks[2] = 'Monster'                               // setter
+        console.log('Las nuevas bebidas son:', drinks)
+
+
+        // Length
+        console.log('En total tenemos', drinks.length, 'bebidas')
+
+
+        // Adding values
+        drinks[drinks.length - 1] = 'Jagger'
+        drinks.push('Chocobaylies')
+        drinks.unshift('Fanta')
+        console.log(drinks)
+
+
+        // Removing values
+        drinks.pop()
+        drinks.splice(1, 2)     // Elimina desde el índice del arg 1 la cantidad de elementos del arg 2
+
+
+
+        // Split text into array
+        const greeting = 'Hola! Me llamo Germán y soy asturiano'
+        const splittedText = greeting.split(' ')
+        console.log('El array resultante del texto es:', splittedText)
+
+
+        // Arrays looping
+
+        // for (let i = 0; i < drinks.length; i++) {
+        //     console.log(drinks[i])
+        // }
+
+
+
+
+        // Paso 1: forEach() con función nominal
+        drinks.forEach(showDrinkOnConsole)
+
+        function showDrinkOnConsole(eachDrink) {
+            console.log(eachDrink)
+        }
+
+
+
+        // Paso 2: forEach() con función anónima
+        drinks.forEach(function (eachDrink) {
+            console.log(eachDrink)
+        })
+
+
+
+        // // Paso 3: forEach() con función flecha
+        // drinks.forEach(eachDrink => console.log(eachDrink))
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
