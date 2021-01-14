@@ -71,3 +71,6 @@ A efecto del alcance de variables:
 - **`pop()`**
 - **`splice()`**
 
+## Main points: truthy / falsy
+
+Los valores **falsies** (`null`, `undefined`, `false`, `NaN`, 0, '') son rechazados por defecto en las estructuras condicionales. Todos los demás (**truthys**) son aceptados por defecto.
